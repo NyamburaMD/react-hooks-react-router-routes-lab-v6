@@ -4,8 +4,11 @@ import Directors from "./pages/Directors";
 import Actors from "./pages/Actors";
 import Movie from "./pages/Movie";
 
-const routes = [
-   
-  ];
+const routes = createBrowserRouter([
+  {path: "/", element: <Home />},
+  {path: "/directors", element: <Directors /> },
+  {path: "/actors", element: <Actors />},
+  {path: "/movie/:id", element: <Movie />},
+]); 
 
 export default routes;
